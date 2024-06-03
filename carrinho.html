@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo1.jpg" alt="Logo da Loja">
+        </div>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='check-password.html'">Login</button>
+            <button onclick="location.href='carrinho.html'">Carrinho</button>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-section">
+            <h2>Seu Carrinho</h2>
+            <div id="cartList"></div>
+            <section class="cart-total">
+                <h2>Total</h2>
+                <p id="total"></p> <!-- Elemento onde o total será exibido -->
+            </section>
+            <button onclick="clearCart()">Esvaziar Carrinho</button>
+            <button onclick="location.href='checkout.html'">Comprar Agora</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

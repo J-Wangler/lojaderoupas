@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar/Editar Roupa - Loja de Roupas Infantis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo1.jpg" alt="Logo da Loja">
+        </div>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='check-password.html'">Login</button>
+            <button onclick="location.href='carrinho.html'">Carrinho</button>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Adicionar/Editar Roupa</h2>
+            <form id="clothesForm">
+                <input type="hidden" id="editIndex" name="editIndex"> <!-- Campo oculto para armazenar o índice de edição -->
+                <label for="name">Nome da Roupa:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="size">Tamanho:</label>
+                <input type="text" id="size" name="size" required>
+
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="price">Preço:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+
+                <label for="image">Foto da Roupa:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <button type="submit" id="submitBtn">Adicionar Roupa</button> <!-- Botão de envio do formulário -->
+            </form>
+        </section>
+        <section class="clothes-list-section">
+            <h2>Roupas Disponíveis</h2>
+            <div id="clothesList"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
